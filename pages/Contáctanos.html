@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/font.css">
 </head>
 
-<body>
+<body style="background-image: url(https://64.media.tumblr.com/0943e295f7b968cd8f657d5a16f4c9b4/4b8c3794309e8563-f4/s1280x1920/637ca2f1626a890705549512226473de91c2f4e4.gifv); background-repeat: no-repeat; background-size: cover; ">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="../Index.html"
@@ -44,31 +44,65 @@
         </div>
     </nav>
 
-    <Main style="height:max-content;">
-        <form style="display: flex; flex-direction: row; margin: 10px; border: 1px rgb(155, 155, 155); border-style:ridge;">
-            <div style="width: 40%; ">
-                <img src="../img/esfera-azul-brillante-sostenida-mano-humana-generada-ia.jpg" width="100%" alt="">
-            </div>
-            <div style="width: 60%; padding: 5px 15px;">
-                <h1>Contáctanos</h1>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">Tu correo no será compartido.</div>
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="exampleInputtext" aria-describedby="text">
+    <div class="contact_form">
 
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Opinión</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </div>
-        </form>
-    </Main>
+        <div class="formulario">      
+          <h1>Formulario de contacto</h1>
+            <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+    
+    
+              <form action="submeter-formulario.php" method="post">       
+    
+                
+                    <p>
+                      <label for="nombre" class="colocar_nombre">Nombre
+                        <span class="obligatorio">*</span>
+                      </label>
+                        <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                    </p>
+                  
+                    <p>
+                      <label for="email" class="colocar_email">Email
+                        <span class="obligatorio">*</span>
+                      </label>
+                        <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                    </p>
+                
+                    <p>
+                      <label for="telefone" class="colocar_telefono">Teléfono
+                      </label>
+                        <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                    </p>    
+                  
+                    <p>
+                      <label for="website" class="colocar_website">Sitio web
+                      </label>
+                        <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
+                    </p>    
+                  
+                    <p>
+                      <label for="asunto" class="colocar_asunto">Asunto
+                        <span class="obligatorio">*</span>
+                      </label>
+                        <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                    </p>    
+                  
+                    <p>
+                      <label for="mensaje" class="colocar_mensaje">Mensaje
+                        <span class="obligatorio">*</span>
+                      </label>                     
+                                        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                    </p>                    
+                  
+                    <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+    
+                    <p class="aviso">
+                      <span class="obligatorio"> * </span>los campos son obligatorios.
+                    </p>          
+                
+              </form>
+        </div>  
+      </div>
 
 
 
